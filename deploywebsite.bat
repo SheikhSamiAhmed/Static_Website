@@ -7,7 +7,7 @@ if exist E:\STATIC_WEBSITE\ (
 )
 echo "Creating STATIC_WEBSITE folder"
 md E:\STATIC_WEBSITE
-xcopy "C:\ProgramData\Jenkins\.jenkins\workspace\4th job" "E:\STATIC_WEBSITE" /s /e /Y
+xcopy "C:\ProgramData\Jenkins\.jenkins\workspace\declaritive_build" "E:\STATIC_WEBSITE" /s /e /Y
 sed -i "s/Dimension/%SedVariable%/g" "E:\STATIC_WEBSITE\index.html"
 
 echo "Clean UP"
